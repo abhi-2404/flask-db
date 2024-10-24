@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask Static and Media Files</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Hello, Flask!</h1>
+        <img src="{{ url_for('static', filename='image.jpg') }}" alt="sample Image">
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
